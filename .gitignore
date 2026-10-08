@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.mp4
+*.mov
+*.m4v
+!azureplume*.mp4
+.tmp*
