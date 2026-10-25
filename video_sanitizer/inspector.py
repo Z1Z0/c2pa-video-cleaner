@@ -28,8 +28,7 @@ def find_tool(tool_name: str, explicit_path: Optional[str] = None) -> Optional[s
         script_dir / f"{tool_name}.exe",
         script_dir / tool_name,
         Path.cwd() / f"{tool_name}.exe",
-        Path(r"D:\Projects\Video metadata sanitization") / f"{tool_name}.exe",
-        Path(r"D:\Projects\metadata sanitization") / f"{tool_name}.exe",
+        Path.cwd() / tool_name,
     ]:
         if candidate.is_file():
             return str(candidate)
